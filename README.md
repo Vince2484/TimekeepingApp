@@ -3,10 +3,9 @@ In order to make use of this, the user needs to take a few steps first.
 
 You need to go to googleapi and create a service account, then create a key.
 When saving the key, save it as a json file named credential.
-It is then necessary to create a google drive folder that will contain the timekeeping records.
-Within that folder, create folders for each office that you wish to implement this and name them
-as you wish.
-Within each of those folders you will need to create another folder to hold the images that will be taken every time someone uses the app.
+It is then necessary to create a google drive folder that will contain the timekeeping records. Make sure to share this folder with the service account,
+or else it won't be able to upload the records.Within that folder, create folders for each office that you wish to implement this and name them
+as you wish.Within each of those folders you will need to create another folder to hold the images that will be taken every time someone uses the app.
 
 Now it is time to edit the python file.
 At the line where folderdest is initialized, you will need to create an entry for every folder that you created. This entry should
